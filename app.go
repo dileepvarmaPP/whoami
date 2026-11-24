@@ -248,6 +248,8 @@ func whoamiHandler(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
+	_, _ = fmt.Fprintln(w, "Dileep testing Nov 24")
+
 	if name != "" {
 		_, _ = fmt.Fprintln(w, "Name:", name)
 	}
